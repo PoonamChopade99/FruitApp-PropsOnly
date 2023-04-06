@@ -1,5 +1,6 @@
 {
   "name": "fruit-prop-card-app",
+  "author":"Poonam Chopade",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

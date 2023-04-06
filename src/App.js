@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer";
+import Fruits from "./components/Fruits";
+import FruitsData from "./components/FruitsData";
+
+
+const FruitsInfo = (cuurent) => {
+  return (
+    <>
+      <Fruits
+        title={cuurent.title}
+        imglink={cuurent.imglink}
+        desc={cuurent.desc}
+        btn={cuurent.btn}
+      />
+    </>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="animate__animated animate__heartBeat">🍒About Fruits🍒</h1>
+      <div className="main-container">
+        {FruitsData.map(FruitsInfo)}
+      </div>
+      <Footer/>
+    </>
   );
 }
-
 export default App;
