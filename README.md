@@ -1,4 +1,5 @@
-# FruitApp-PropsOnly
+# FruitApp
+Created a Fruit App using ReactJs Props 
 ### Screenshot
 
 ![view1](https://github.com/PoonamChopade99/FruitApp-PropsOnly/blob/master/src/assests/1.PNG)
